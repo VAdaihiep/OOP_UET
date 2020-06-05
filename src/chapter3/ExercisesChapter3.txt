@@ -1,0 +1,11 @@
+Exercise 1:
+a,Lớp_____________được biên dịch từ một file .java.
+b,Lớp_____________ đóng vai trò như một khuôn mẫu.
+c,Phương thức_____________ thực hiện các công việc.
+d,Lớp_____________ có thể có nhiều phương thức.
+e,Biến thực thể_____________ biểu diễn 'trạng thái'
+f,Phương thức_____________ có các hành vi.
+g,Biến thực thể_____________ được đặt trong các đối tượng.
+h,Lớp_____________ được dùng để tạo các thực thể đối tượng.
+i,Biến thực thể_____________ có thể thay đổi khi chương trình chạy
+j,Lớp_____________ có các phương thức

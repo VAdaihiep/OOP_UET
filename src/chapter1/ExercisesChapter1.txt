@@ -1,0 +1,7 @@
+1,
+a, Phương thức
+b, **** (Chưa rõ câu trả lời)
+2, A
+3, B
+4, E
+5, C
