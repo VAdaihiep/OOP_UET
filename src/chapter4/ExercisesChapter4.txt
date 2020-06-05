@@ -1,0 +1,35 @@
+Exercise 1:
+a, 0
+b, false
+c, nguyên thủy, tham chiếu
+
+Exercise 2:
+a,
+b,
+c,
+d, Sai.
+Java cũng cho phép gán một giá trị kiểu số thực với dấu chấm động (chẳnghạn float) vào một biến kiểu số nguyên (chẳng hạn int).
+Trình biên dịch sẽ phát hiện và báo lỗi.
+
+Exercise 3:
+- Định nghĩa:
+Biến thực thể (instance variable) là một biến được định nghĩa trong một lớp,
+mà mỗi đối tượng được tạo ra cho lớp đó có một bản sao riêng.
+vd:
+String a;
+int b;
+
+- Cách dùng:
++ Biến instance được khai báo trong một lớp(class), bên ngoài các phương thức, constructor và các block.
++ Biến instance được lưu trong bộ nhớ heap.
++ Biến instance được tạo khi một đối tượng được tạo bằng việc sử dụng từ khóa “new” và sẽ bị phá hủy khi đối tượng bị phá hủy.
++ Biến instance có thể được sử dụng bởi các phương thức, constructor, block, ... Nhưng nó phải được sử dụng thông qua một đối tượng cụ thể.
++ Bạn được phép sử dụng "access modifier" khi khai báo biến instance, mặc định là "default".
++ Biến instance có giá trị mặc định phụ thuộc vào kiểu dữ liệu của nó.
+Ví dụ nếu là kiểu int, short, byte thì giá trị mặc định là 0, kiểu double thì là 0.0d, ...
+Vì vậy, bạn sẽ không cần khởi tạo giá trị cho biến instance trước khi sử dụng.
++ Bên trong class mà bạn khai báo biến instance, bạn có thể gọi nó trực tiếp bằng tên khi sử dụng ở khắp nới bên trong class đó.
+
+Exercise 5:
+
+Exercise 7:
