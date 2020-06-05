@@ -18,9 +18,7 @@ class Exercise3_SoundDeckTestDrive {
 	Exercise3_SoundDeck t = new Exercise3_SoundDeck();
 	t.canRecord = true;
 	t.play();
-	//Sua loi bai 2
-	// t.canRecord == true -> t.canRecord
-	if (t.canRecord) {
+	if (t.canRecord == true) {
 	  t.record();
 	}
   }
