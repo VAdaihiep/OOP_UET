@@ -37,9 +37,13 @@ public class Exercise4 {
 
   void exampleH() {
 	for (int i = 1; i < 100; i++) {
-	  if (i % 2 == 0) {
-		sumEven += i;
-	  }
+	  //Dung toan tu 3 ngoi
+	  sumEven += (i % 2 == 0) ? i : 0;
+
+	  //Dung if
+	  //if (i % 2 == 0) {
+	  //sumEven += i;
+	  //}
 	}
 	System.out.println(sumEven);
   }
