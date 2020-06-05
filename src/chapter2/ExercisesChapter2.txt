@@ -9,7 +9,15 @@ b, Đúng
 c, Sai. Trong vòng for không phải lúc nào hành động cũng được lặp đi lặp lại.
 d, Đúng
 e, Đúng
-f, Sai. Double không thể bị ép kiểu sang kiểu dữ liệu khác.
+f, Sai.
+Không phải khi dùng phép toán đổi kiểu(double), DoubleValue cũng trả về giá trị nguyên là bản sao toán hạng của nó.
+
+double DoubleValue = 3.6987;
+int IntValue1 = (int) DoubleValue;
+long IntValue2 = (long) DoubleValue;
+System.out.println(DoubleValue + " is now " + IntValue1); -> 3.6987 is now 3
+System.out.println(DoubleValue + " is now " + IntValue2); -> 3.6987 is now 3.6987
+
 g, Đúng
 h, Sai, boolean nhận giá trị mặc định là false.
 
