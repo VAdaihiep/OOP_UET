@@ -1,9 +1,9 @@
 Exercise 1:
 Một lớp có thể có số lượng tùy ý các ____________. (biến thực thể)
 Một phương thức chỉ có thể có một ____________.(giá trị trả về)
-(truyền bằng giá trị, giá trị trả về)____________ có thể được ngầm đổi kiểu dữ liệu.
+(giá trị trả về)____________ có thể được ngầm đổi kiểu dữ liệu.
 (đóng gói)____________ có nghĩa là "tôi muốn biến thực thể của tôi ở dạng private".
-(phương thức)____________ thực chất có nghĩa là "tạo một bản sao".
+(truyền bằng giá trị)____________ thực chất có nghĩa là "tạo một bản sao".
 (phương thức get)____________ chỉ nên được cập nhật bởi các phương thức setter.
 Một phương thức có thể có nhiều ____________.(đối số)
 (phương thức get, phương thức set)____________ trả về giá trị gì đó.
