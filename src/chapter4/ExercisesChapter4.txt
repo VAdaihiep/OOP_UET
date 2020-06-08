@@ -4,17 +4,16 @@ b, false
 c, nguyên thủy, tham chiếu
 
 Exercise 2:
-a,
-b,
-c,
+a, Đúng
+b, Đúng
+c, Đúng
 d, Sai.
 Java cũng cho phép gán một giá trị kiểu số thực với dấu chấm động (chẳnghạn float) vào một biến kiểu số nguyên (chẳng hạn int).
 Trình biên dịch sẽ phát hiện và báo lỗi.
 
 Exercise 3:
 - Định nghĩa:
-Biến thực thể (instance variable) là một biến được định nghĩa trong một lớp,
-mà mỗi đối tượng được tạo ra cho lớp đó có một bản sao riêng.
+Biến thực thể (instance variable) là một biến được định nghĩa trong một lớp, mà mỗi đối tượng được tạo ra cho lớp đó có một bản sao riêng.
 vd:
 String a;
 int b;
@@ -30,6 +29,13 @@ Ví dụ nếu là kiểu int, short, byte thì giá trị mặc định là 0, 
 Vì vậy, bạn sẽ không cần khởi tạo giá trị cho biến instance trước khi sử dụng.
 + Bên trong class mà bạn khai báo biến instance, bạn có thể gọi nó trực tiếp bằng tên khi sử dụng ở khắp nới bên trong class đó.
 
-Exercise 5:
-
 Exercise 7:
+- Sửu:
+	Sau khi Sửu khai báo mảng a để cập nhật danh bạ, thì sẽ dễ dàng xử lý dữ liệu sau này
+	(Ta sẽ có 1 mảng Contact được đánh index: a[0], a[1], a[2], ... a[9].)
+- Tí:
+	Tí dùng ref để cập nhật danh bạ, sau khi tạo 10 đối tượng Contact, thì xử lý dữ liệu sau này chỉ xử lý mỗi đối tượng Contact được tạo ra cuối cùng.
+	(Không xử lý được dữ liệu từ những đối tượng Contact được tạo ra từ trước đó).
+
+-> Cách của Tí tiết kiệm bộ nhớ, nhưng không được dùng để xử lý dữ liệu được.
+

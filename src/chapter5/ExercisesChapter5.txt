@@ -1,0 +1,61 @@
+Exercise 1:
+Một lớp có thể có số lượng tùy ý các ____________. (biến thực thể)
+Một phương thức chỉ có thể có một ____________.(giá trị trả về)
+(truyền bằng giá trị, giá trị trả về)____________ có thể được ngầm đổi kiểu dữ liệu.
+(đóng gói)____________ có nghĩa là "tôi muốn biến thực thể của tôi ở dạng private".
+(phương thức)____________ thực chất có nghĩa là "tạo một bản sao".
+(phương thức get)____________ chỉ nên được cập nhật bởi các phương thức setter.
+Một phương thức có thể có nhiều ____________.(đối số)
+(phương thức get, phương thức set)____________ trả về giá trị gì đó.
+(public)____________ không nên được dùng cho các biến thực thể.
+(phương thức)____________ có thể có nhiều đối số.
+(private)____________ giúp thực hiện nguyên tắc đóng gói.
+(Giá trị trả về)____________ lúc nào cũng chỉ có một.
+
+Exercise 2:
+a) Mỗi tham số phải được chỉ rõ một _______ và một ______ (kiểu dữ liệu và tên tham số)
+b) Từ khóa ______ đặt tại khai báo kiểu trả về quy định rằng một phương thức sẽ không trả về giá trị gì sau khi nó hoàn thành nhiệm vụ.
+(void)
+
+Exercise 3:
+a) Đúng
+b) Sai. Mình có thể dùng get, set để truy cập từ bên ngoài lớp nó được khai báo.
+c) Đúng
+d) Đúng
+e) Sai. Đôi khi biến địa phương kiểu cơ bản cần phải khai báo, chứ nó không được khởi tạo sẵn.
+f) Đúng
+
+Exercise 4: Phân biệt biến thực thể, biến địa phương
+- Biến thực thể:
+	+ Biến thực thể được khai báo bên trong một lớp nhưng không nằm trong một phương thức nào.
+	+  Nó được tạo ra khi đối tượng được tạo ra và hết hiệu lực khi đối tượng đó bị hủy.
+- Biến địa phương:
+	+ Biến được khai báo ở trong một hàm(phương thức).
+	+ Biến địa phương phải được khởi tạo trước khi sử dụng.
+	+ Nó được sinh ra khi phương thức được gọi và dòng lệnh khai báo nó được thực thi. Nó hết hiệu
+      lực khi ra ngoài phạm vi – kết thúc khối lệnh khai báo nó hoặc khi phương thức kết thúc.
+	+ Tham số của một phương thức cũng là biến địa phương của phương thức đó.
+
+Exercise 5:
+- Giải thích mục đích của tham số phương thức:
+	+ Thông tin có thể được truyền cho các phương thức như là các tham số.
+	+ Các tham số đóng vai trò là các biến bên trong phương thức.
+	+ Tham số được truyền vào phương thức, giúp cho phương thức cụ thể hóa những dữ liệu/thông tin cần xử lý.
+
+- Phân biệt tham số/đối số:
+https://i.stack.imgur.com/Jlbh2.jpg
+https://stackoverflow.com/questions/156767/whats-the-difference-between-an-argument-and-a-parameter
+1, Tham số:
++ Tham số(Parameter) là biến trong khai báo hàm.
+
+2, Đối số:
++ Đối số(Argument) là giá trị thực của biến này được truyền vào hàm.
+
+Exercise 6: Tại sao một lớp có thể cần cung cấp phương thức set và phương thức get cho một biến thực thể?
+- Set và Get là 2 phương thức sử dụng để cập nhật hoặc lấy ra giá trị cho một biến thực thể, đặc biệt dành cho các biến ở phạm vi private.
+- Ngoài việc bảo vệ dữ liệu, đóng gói và che giấu dữ liệu còn mang lại một lợi ích khác.
+Đó là khả năng thay đổi cấu trúc bên trong của một lớp mà không làm ảnh hưởng đến những phần mã bên ngoài có sử dụng đến lớp đó.
+
+
+
+

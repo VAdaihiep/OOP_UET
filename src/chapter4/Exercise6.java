@@ -21,8 +21,11 @@ public class Exercise6 {
 	hq[2] = hq[0];
 
 	/*
-	HQ[1], HQ[3] chiếu đến null
-	 */
+	HQ[0]: chiếu đến Null
+	HQ[1]: chiếu đến HQ[1]
+	HQ[2]: chiếu đến null
+	HQ[3]: chiếu đến HQ[2]
+	HQ[4]: chiếu đến HQ[0]
 
 	for (int i = 0; i < 5; i++) {
 	  System.out.println("hq[i]" + hq[i] + " i " + i);
@@ -32,5 +35,7 @@ public class Exercise6 {
 	System.out.println("hq[2]" + hq[2]);
 	System.out.println("hq[3]" + hq[3]);
 	System.out.println("hq[4]" + hq[4]);
+
+	*/
   }
 }
