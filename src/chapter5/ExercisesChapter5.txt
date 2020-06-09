@@ -4,12 +4,12 @@ Một phương thức chỉ có thể có một ____________.(giá trị trả v
 (giá trị trả về)____________ có thể được ngầm đổi kiểu dữ liệu.
 (đóng gói)____________ có nghĩa là "tôi muốn biến thực thể của tôi ở dạng private".
 (truyền bằng giá trị)____________ thực chất có nghĩa là "tạo một bản sao".
-(phương thức get)____________ chỉ nên được cập nhật bởi các phương thức setter.
+(Biến thực thể)____________ chỉ nên được cập nhật bởi các phương thức setter.
 Một phương thức có thể có nhiều ____________.(đối số)
-(phương thức get, phương thức set)____________ trả về giá trị gì đó.
+(phương thức)____________ trả về giá trị gì đó.
 (public)____________ không nên được dùng cho các biến thực thể.
 (phương thức)____________ có thể có nhiều đối số.
-(private)____________ giúp thực hiện nguyên tắc đóng gói.
+(phương thức get, phương thức set)____________ giúp thực hiện nguyên tắc đóng gói.
 (Giá trị trả về)____________ lúc nào cũng chỉ có một.
 
 Exercise 2:
@@ -19,10 +19,11 @@ b) Từ khóa ______ đặt tại khai báo kiểu trả về quy định rằng
 
 Exercise 3:
 a) Đúng
-b) Sai. Mình có thể dùng get, set để truy cập từ bên ngoài lớp nó được khai báo.
+b) Đúng
 c) Đúng
-d) Đúng
-e) Sai. Đôi khi biến địa phương kiểu cơ bản cần phải khai báo, chứ nó không được khởi tạo sẵn.
+d) Sai.
+Biến kiểu cơ bản như là int, long,.. Không thể gọi phương thức từ các biến kiểu cơ bản.
+e) Đúng
 f) Đúng
 
 Exercise 4: Phân biệt biến thực thể, biến địa phương

@@ -8,7 +8,7 @@ a, Đúng
 b, Đúng
 c, Đúng
 d, Sai.
-Java cũng cho phép gán một giá trị kiểu số thực với dấu chấm động (chẳnghạn float) vào một biến kiểu số nguyên (chẳng hạn int).
+Java không cho phép gán một giá trị kiểu số thực với dấu chấm động (chẳnghạn float) vào một biến kiểu số nguyên (chẳng hạn int).
 Trình biên dịch sẽ phát hiện và báo lỗi.
 
 Exercise 3:

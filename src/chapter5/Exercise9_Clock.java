@@ -1,23 +1,18 @@
 package chapter5;
 
 class Clock {
-  String time;
+  //Sửa String time thành private String time;
+  private String time;
 
-/*2 phương thức set, get bị sai. Sửa lại như bên dưới.
+  /*
+  2 phương thức set, get bị sai. Sửa lại như bên dưới.
+   */
   void setTime(String t) {
-	return time;
+	time = t;
   }
 
-  void getTime(){
-    return time;
-  }
-*/
-
-  void setTime(String time) {
-	this.time = time;
-  }
-
-  public String getTime() {
+  //Sửa void thành String
+  String getTime() {
 	return time;
   }
 }

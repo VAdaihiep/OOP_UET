@@ -21,11 +21,11 @@ public class Exercise6 {
 	hq[2] = hq[0];
 
 	/*
-	HQ[0]: chiếu đến Null
-	HQ[1]: chiếu đến HQ[1]
-	HQ[2]: chiếu đến null
-	HQ[3]: chiếu đến HQ[2]
-	HQ[4]: chiếu đến HQ[0]
+	HQ[0]: không tham chiếu đến đối tượng nào
+	HQ[1]: chiếu đến đối tượng hq
+	HQ[2]: không tham chiếu đến đối tượng nào
+	HQ[3]: chiếu đến đối tượng hq
+	HQ[4]: chiếu đến đối tượng hq
 
 	for (int i = 0; i < 5; i++) {
 	  System.out.println("hq[i]" + hq[i] + " i " + i);

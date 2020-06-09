@@ -1,9 +1,9 @@
 package chapter5;
 
 class Employee {
-  String first_name;
-  String last_name;
-  double salary;
+  private String first_name;
+  private String last_name;
+  private double salary;
 
   public Employee(String first_name, String last_name, double salary) {
 	this.first_name = first_name;
@@ -28,7 +28,7 @@ class Employee {
   }
 
   public double getSalary() {
-	return Math.max(salary, 0.0);
+	return salary;
   }
 
   public void setSalary(double salary) {
@@ -40,6 +40,10 @@ public class EmployeeTest {
   public static void main(String[] args) {
 	Employee employee1 = new Employee("Hai", "Nguyen", 45);
 	Employee employee2 = new Employee("Hana", "Hoang", -3);
+
+	if (employee1.getSalary() < 0) employee1.setSalary(0.0);
+	if (employee2.getSalary() < 0) employee2.setSalary(0.0);
+
 	System.out.println("Employee1: Total salary of year is: " + employee1.getSalary());
 	System.out.println("Employee2: Total salary of year is: " + employee2.getSalary());
 	employee1.setSalary(employee1.getSalary() * 1.1);

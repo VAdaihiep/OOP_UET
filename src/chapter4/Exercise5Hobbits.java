@@ -5,7 +5,8 @@ public class Exercise5Hobbits {
 
   public static void main(String[] args) {
 	Exercise5Hobbits[] h = new Exercise5Hobbits[3];
-	int z = 0;
+	//Change z = 0 to z = -1
+	int z = -1;
 
 	//Change z < 4 to z < 2
 	while (z < 2) {
