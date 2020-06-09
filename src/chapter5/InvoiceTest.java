@@ -38,7 +38,7 @@ class Invoice {
   }
 
   public double getUnitPrice() {
-	return unitPrice;
+	return Math.max(unitPrice, 0);
   }
 
   public void setUnitPrice(double unitPrice) {

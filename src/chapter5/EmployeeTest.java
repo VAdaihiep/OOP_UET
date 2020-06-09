@@ -28,7 +28,7 @@ class Employee {
   }
 
   public double getSalary() {
-	return salary;
+	return Math.max(salary, 0.0);
   }
 
   public void setSalary(double salary) {

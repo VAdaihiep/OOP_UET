@@ -59,4 +59,14 @@ Exercise 6: Tại sao một lớp có thể cần cung cấp phương thức set
 
 
 
+Phân biệt tham chiếu, tham trị:
+- Tham trị: Địa chỉ của biến bị thay đổi >< Giá trị khi in ra vẫn giữ nguyên.
+- Tham chiếu: Địa chỉ của biến giống hệt với ban đầu >< Giá trị khi in ra đã bị hoán đổi.
 
+- Cách sử dụng
++ Tham trị: khi dùng tham trị, hàm sẽ tạo một biến mới nào đó, mình gọi nó là a’ và lấy GIÁ TRỊ của biến được truyền vào a.
+Vì thế, mọi thay đổi sẽ được áp dụng lên cái biến a’ đó.
+Khi kết thúc hàm, biến a’ bị giải phóng, còn biến a vẫn tồn tại và giữ giá trị ban đầu của nó.
+
++ Tham chiếu:
+Biến được truyền vào chính xác là biến a, khi đó thay đổi sẽ áp dụng trực tiếp lên biến a, không có một thằng a’ nào được tạo ra cả.
