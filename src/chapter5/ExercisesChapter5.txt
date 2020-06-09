@@ -9,7 +9,7 @@ Một phương thức có thể có nhiều ____________.(đối số)
 (phương thức)____________ trả về giá trị gì đó.
 (public)____________ không nên được dùng cho các biến thực thể.
 (phương thức)____________ có thể có nhiều đối số.
-(phương thức get, phương thức set)____________ giúp thực hiện nguyên tắc đóng gói.
+(public, private)____________ giúp thực hiện nguyên tắc đóng gói.
 (Giá trị trả về)____________ lúc nào cũng chỉ có một.
 
 Exercise 2:

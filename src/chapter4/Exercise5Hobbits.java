@@ -5,12 +5,10 @@ public class Exercise5Hobbits {
 
   public static void main(String[] args) {
 	Exercise5Hobbits[] h = new Exercise5Hobbits[3];
-	//Change z = 0 to z = -1
-	int z = -1;
+	int z = 0;
 
 	//Change z < 4 to z < 2
-	while (z < 2) {
-	  z = z + 1;
+	while (z < 3) {
 	  h[z] = new Exercise5Hobbits();
 	  h[z].name = "bilbo";
 	  if (z == 1) {
@@ -21,6 +19,7 @@ public class Exercise5Hobbits {
 	  }
 	  System.out.println(h[z].name + " is a");
 	  System.out.println("good Hoobit name");
+	  z = z + 1;
 	}
   }
 }

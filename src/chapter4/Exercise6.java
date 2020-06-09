@@ -22,10 +22,10 @@ public class Exercise6 {
 
 	/*
 	HQ[0]: không tham chiếu đến đối tượng nào
-	HQ[1]: chiếu đến đối tượng hq
+	HQ[1]: chiếu đến đối tượng HeapQuiz có id = 1
 	HQ[2]: không tham chiếu đến đối tượng nào
-	HQ[3]: chiếu đến đối tượng hq
-	HQ[4]: chiếu đến đối tượng hq
+	HQ[3]: chiếu đến đối tượng HeapQuiz có id = 2
+	HQ[4]: chiếu đến đối tượng HeapQuiz có id = 0
 
 	for (int i = 0; i < 5; i++) {
 	  System.out.println("hq[i]" + hq[i] + " i " + i);

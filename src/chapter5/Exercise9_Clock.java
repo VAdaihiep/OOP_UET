@@ -5,7 +5,7 @@ class Clock {
   private String time;
 
   /*
-  2 phương thức set, get bị sai. Sửa lại như bên dưới.
+  phương thức get bị sai. Sửa lại như bên dưới.
    */
   void setTime(String t) {
 	time = t;

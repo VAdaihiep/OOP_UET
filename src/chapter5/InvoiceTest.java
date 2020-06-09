@@ -9,8 +9,8 @@ class Invoice {
   public Invoice(String partNumber, String partDescription, int quantity, double unitPrice) {
 	this.partNumber = partNumber;
 	this.partDescription = partDescription;
-	this.quantity = quantity;
-	this.unitPrice = unitPrice;
+	this.quantity = Math.max(quantity, 0);
+	this.unitPrice = Math.max(unitPrice, 0.0);
   }
 
   public String getPartNumber() {
@@ -55,23 +55,17 @@ public class InvoiceTest {
 	Invoice durex = new Invoice("69", "Durex Invisible Extra Thin", 15, 12.5);
 	Invoice sagami = new Invoice("96", "Sagami Xtreme Green", -1, -15.0);
 
-	if (durex.getUnitPrice() < 0) durex.setUnitPrice(0.0);
-	if (sagami.getUnitPrice() < 0) sagami.setUnitPrice(0.0);
-	if (durex.getQuantity() < 0) durex.setUnitPrice(0);
-	if (sagami.getQuantity() < 0) sagami.setUnitPrice(0);
-
-	printInvoice(durex.getPartDescription(), durex.getInvoiceAmount());
-	printInvoice(sagami.getPartDescription(), sagami.getInvoiceAmount());
-
+	printInvoice(durex);
+	printInvoice(sagami);
   }
 
-  private static void printInvoice(String partDescription, double total) {
+  private static void printInvoice(Invoice invoice) {
 	/*
 	Using String Format
 	%s : sẽ in chuỗi tham số đầu vào.
 	%d : sẽ in số nguyên như tham số đầu vào.
 	%.2f : hiển thị tối đa x chữ số thập phân của số.
 	 */
-	System.out.printf("%s = %.2f\n", partDescription, total);
+	System.out.printf("%s - %d = %.2f\n", invoice.getPartDescription(), invoice.getQuantity(), invoice.getUnitPrice());
   }
 }
