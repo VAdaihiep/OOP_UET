@@ -41,11 +41,11 @@ public class EmployeeTest {
 	Employee employee1 = new Employee("Hai", "Nguyen", 45);
 	Employee employee2 = new Employee("Hana", "Hoang", -3);
 
-	System.out.println("Employee1: Total salary of year is: " + employee1.getSalary());
-	System.out.println("Employee2: Total salary of year is: " + employee2.getSalary());
+	System.out.println("Employee1: Total salary of year is: " + employee1.getSalary() * 12);
+	System.out.println("Employee2: Total salary of year is: " + employee2.getSalary() * 12);
 	employee1.setSalary(employee1.getSalary() * 1.1);
 	employee2.setSalary(employee2.getSalary() * 1.1);
-	System.out.println("Employee1 after change: Total salary of year is: " + employee1.getSalary());
-	System.out.println("Employee2 after change: Total salary of year is: " + employee2.getSalary());
+	System.out.println("Employee1 after change: Total salary of year is: " + employee1.getSalary() * 12);
+	System.out.println("Employee2 after change: Total salary of year is: " + employee2.getSalary() * 12);
   }
 }
