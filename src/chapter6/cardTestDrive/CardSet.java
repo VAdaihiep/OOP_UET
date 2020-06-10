@@ -16,7 +16,7 @@ class CardSet {
 	  }
 	}
 	for (Card card : shuffleCard) {
-	  System.out.println(card.rank + "-" + card.suit);
+	  System.out.println(card.getRank() + "-" + card.getSuit());
 	}
   }
 }
