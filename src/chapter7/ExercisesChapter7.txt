@@ -1,0 +1,14 @@
+Exercise 1:
+a) Các thành viên có mức truy nhập _________ của lớp cha có thể được truy nhập từ trong lớp cha và lớp con.
+public
+b) Trong quan hệ ___________, một đối tượng của một lớp con có thể được đối xử như một đối tượng thuộc lớp cha.
+thừa kế
+
+c) Trong quan hệ ___________ giữa hai lớp, đối tượng của một lớp này có biến thực thể là tham chiếu tới đối tượng thuộc lớp kia.
+đa hình
+
+Exercise 2:
+a) Đúng.
+b) Đúng.
+c) Sai.
+d) Đúng.

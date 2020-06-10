@@ -1,0 +1,40 @@
+Exercise 1:
+a) Nếu một lớp chứa ít nhất một phương thức trừu tượng thì nó phải là lớp ________
+
+b) Các lớp mà từ đó có thể tạo đối tượng được gọi là các lớp _______
+
+c) _______ cho phép sử dụng một tham chiếu kiểu lớp cha để gọi phương thức
+từ các đối tượng của lớp cha cũng như lớp con, cho phép ta lập trình cho trường hợp tổng quát.
+
+d) Các phương thức không phải phương thức interface và không cung cấp cài đặt phương thức phải được khai báo với từ khóa _______
+
+
+Exercise 2:
+a)
+b)
+
+Exercise 3:
+- Phương thức trừu tượng là gì?
+
+- Hãy mô tả các tình huống mà ta nên khai báo một phương thức là phương thức trừu tượng.
+
+Exercise 4:
+- So sánh lớp trừu tượng và interface?
+
+- Khi nào ta nên dùng lớp trừu tượng, khi nào nên dùng interface?
+
+Exercise 5:
+- Đa hình hỗ trợ như thế nào cho khả năng mở rộng cây thừa kế?
+
+Exercise 6:
+- Liệt kê 4 kiểu gán tham chiếu lớp cha và lớp con cho các biến kiểu lớp cha và lớp con, mỗi kiểu có những thông tin quan trọng gì?
+
+
+Exercise 7:
+- Giải thích quan điểm rằng đa hình cho phép lập trình tổng quát thay vì lập trình cho từng trường hợp cụ thể. Dùng ví dụ minh họa.
+
+- Lập trình tổng quát mang lại những ích lợi gì?
+
+Exercise 8:
+- Một lớp con có thể thừa kế giao diện hay cài đặt từ một lớp cha.
+Một cây thừa kế được thiết kế để cho thừa kế giao diện khác với cây thừa kế được dành cho thừa kế cài đặt như thế nào?
