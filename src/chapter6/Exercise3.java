@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 
 public class Exercise3 {
   public static void main(String[] args) {
-	String dataLine;
+	String dataText;
 	Scanner input = null;
 	File file = new File("");
 	try {
@@ -19,8 +19,8 @@ public class Exercise3 {
 	  System.exit(0);
 	}
 	while (input.hasNext()) {
-	  dataLine = input.next();
-	  System.out.print(dataLine + " ");
+	  dataText = input.next();
+	  System.out.print(dataText + " ");
 	}
 	input.close();
   }
