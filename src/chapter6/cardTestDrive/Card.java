@@ -3,12 +3,14 @@ package chapter6.cardTestDrive;
 class Card {
   public static final int[] RANK = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14};
 
-  public static final String[] SUITS = {"Rô", "Bích", "Tép", "Cơ"};
+  public enum Suit {
+	RO, BICH, TEP, CO
+  }
 
   private int rank;
-  private String suit;
+  private Suit suit;
 
-  public Card(int rank, String suit) {
+  public Card(int rank, Suit suit) {
 	this.rank = rank;
 	this.suit = suit;
   }
@@ -21,11 +23,11 @@ class Card {
 	this.rank = rank;
   }
 
-  public String getSuit() {
+  public Suit getSuit() {
 	return suit;
   }
 
-  public void setSuit(String suit) {
+  public void setSuit(Suit suit) {
 	this.suit = suit;
   }
 }

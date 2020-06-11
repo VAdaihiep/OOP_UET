@@ -1,7 +1,7 @@
 package chapter6.cardTestDrive;
 
 public class CardTestDrive extends Card {
-  public CardTestDrive(int rank, String suit) {
+  public CardTestDrive(int rank, Suit suit) {
 	super(rank, suit);
   }
 
@@ -10,7 +10,7 @@ public class CardTestDrive extends Card {
 	cardSet.createCardSolitaire();
 	cardSet.shuffle();
 
-	Card card = new Card(RANK[2], SUITS[3]);
+	Card card = new Card(RANK[2], Suit.BICH);
 	System.out.printf("Test Card: rank = %d, suit = %s", card.getRank(), card.getSuit());
   }
 }
