@@ -7,7 +7,6 @@ public class CardTestDrive extends Card {
 
   public static void main(String[] args) {
 	CardSet cardSet = new CardSet();
-	cardSet.createCardSolitaire();
 	cardSet.shuffle();
 
 	Card card = new Card(RANK[2], Suit.BICH);
