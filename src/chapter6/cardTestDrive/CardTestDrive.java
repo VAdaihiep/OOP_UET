@@ -1,13 +1,17 @@
 package chapter6.cardTestDrive;
 
-public class CardTestDrive {
+public class CardTestDrive extends Card {
+  public CardTestDrive(int rank, String suit) {
+	super(rank, suit);
+  }
+
   public static void main(String[] args) {
 	CardSet cardSet = new CardSet();
+	cardSet.createCardSolitaire();
 	cardSet.shuffle();
 
-	Card card = new Card("2", "CLUBS");
-	System.out.println(card.getRank());
-	System.out.println(card.getSuit());
+	Card card = new Card(RANK[2], SUITS[3]);
+	System.out.printf("Test Card: rank = %d, suit = %s", card.getRank(), card.getSuit());
   }
 }
 

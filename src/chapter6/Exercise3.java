@@ -7,11 +7,11 @@ import java.util.regex.Pattern;
 
 public class Exercise3 {
   public static void main(String[] args) {
-	long startTime = System.currentTimeMillis();
 	String dataLine;
 	Scanner input = null;
+	File file = new File("");
 	try {
-	  input = new Scanner(new File("C:\\HNL\\OOP_UET\\src\\chapter6\\Exercise3_Test.txt"));
+	  input = new Scanner(new File(file.getAbsoluteFile() + "\\src\\chapter6\\Exercise3_Test.txt"));
 //	  input.skip("[^a-zA-Z]*");
 	  input.useDelimiter(Pattern.compile("[^a-zA-Z]"));
 	} catch (FileNotFoundException e) {
@@ -23,6 +23,5 @@ public class Exercise3 {
 	  System.out.print(dataLine + " ");
 	}
 	input.close();
-	System.out.println("StringBuilder is: " + (System.currentTimeMillis() - startTime) + "ms");
   }
 }
