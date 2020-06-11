@@ -1,18 +1,25 @@
 package chapter7.exercise6;
 
 public class NickleNDime extends Account {
-  int withdrawCount;
+  static int FEE_PER_WITHDRAW = 2000;
+  private int withdrawCount;
 
   public NickleNDime(int initialBalance) {
 	super(initialBalance);
   }
 
-  public void withdraw(int amount){
-    withdrawCount++;
+  public boolean withdraw(int amount) {
+	try {
+	  withdrawCount++;
+	  return true;
+	} catch (Exception e) {
+	  e.printStackTrace();
+	  return false;
+	}
   }
 
   public int endMonthCharge() {
-	return withdrawCount;
+	return withdrawCount * FEE_PER_WITHDRAW;
   }
 
   public void endMonth() {
