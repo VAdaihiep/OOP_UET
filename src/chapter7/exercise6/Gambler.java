@@ -1,18 +1,21 @@
 package chapter7.exercise6;
 
 public class Gambler extends Account {
-  int probability;
+  private int probability;
 
   public Gambler(int initialBalance) {
 	super(initialBalance);
+	this.probability = (int) (Math.random() * 100 + 1);
+  }
+
+  public int getProbability() {
+	return probability;
   }
 
   public boolean withdraw(int amount) {
 	try {
-	  int balance = getBalance();
-	  if (probability == 51) {
-		balance -= amount * 2;
-		setBalance(balance);
+	  if (getProbability() > 49) {
+		setBalance(getBalance() - 2 * amount);
 	  }
 	  return true;
 	} catch (Exception e) {
