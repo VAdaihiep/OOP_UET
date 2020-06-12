@@ -1,40 +1,108 @@
 Exercise 1:
 a) Nếu một lớp chứa ít nhất một phương thức trừu tượng thì nó phải là lớp ________
-
+trừu tượng
 b) Các lớp mà từ đó có thể tạo đối tượng được gọi là các lớp _______
-
+lớp cụ thể
 c) _______ cho phép sử dụng một tham chiếu kiểu lớp cha để gọi phương thức
 từ các đối tượng của lớp cha cũng như lớp con, cho phép ta lập trình cho trường hợp tổng quát.
-
+interface
 d) Các phương thức không phải phương thức interface và không cung cấp cài đặt phương thức phải được khai báo với từ khóa _______
-
+abstract
 
 Exercise 2:
-a)
-b)
+a) Sai.
+b) Đúng.
 
 Exercise 3:
 - Phương thức trừu tượng là gì?
+Phương thức trừu tượng(PTTT) là các phương thức có chứa từ khóa abstract.
+PTTT chỉ có phần tên chứ không có phần thân, phía sau tên phương thức là dấu chấm phẩy
+vd: abstract double add(double a, double b);
 
 - Hãy mô tả các tình huống mà ta nên khai báo một phương thức là phương thức trừu tượng.
+Trong lớp trừu tượng Animal, ta có phương thức Foot, do không phải con vật nào cũng có số chân bằng nhau(vd đà điểu, gà, chó, nhện,...)
+vậy nên ta phải khai báo là chúng có chung phương thức là Foot, nhưng không thể nêu cụ thể số chân trong phương thức này được.
+Chính vì thế cần khai báo phương thức Foot là phương thức trừu tượng.
+Mỗi một con vật sẽ sử dụng phương thức trừu tượng Foot, và có giá trị trả về khác nhau.
 
 Exercise 4:
 - So sánh lớp trừu tượng và interface?
++ Interface:
+Không phải là class.
+Chỉ chứa những method/properties trống không có thực thi.
+Nó giống như một khuôn mẫu, một khung để để các lớp implement và follow.
+Các lớp có thể implements nhiều interface.
+Là một contract, các class implement phải triển khai các method theo như interface đã định nghĩa.
+
++ Abstract class:
+  Khá giống Interface nhưng nó có thể làm nhiều việc hơn.
+  Có 2 loại method là abstract method và method thường:
+  abstract method là method trống không có thực thi.
+  method thường là method có thực thi.
+  Các lớp chỉ có thể kế thừa một Abstract class
+  Hướng đến tính năng và những tính năng có thực thi được sử dụng làm hàm chung cho các class extend.
+
++ Ưu điểm:
+  ++ Interface
+  Có thể kế thừa nhiều interface(tính đa hình).
+  Xây dựng được bộ khung mẫu mà các lớp phải follow theo.
+  Giúp quản lý tốt, nắm bắt được các chức năng phải có cho một đối tượng nào đó.
+  ++ Abstract class
+  Có thể linh động các method. giống như một class thông thường.
+  Các class extend có thể override hoặc không override các method thường.
+
++ Nhược điểm:
+  ++ Interface:
+  Mỗi khi định nghĩa thêm tính năng, các class implement nó đồng lọat phải thêm tính năng đó, khả năng cao sẽ không có xử lý gì.
+  ++ Abstract class:
+  Không thể extend nhiều abstract class.
 
 - Khi nào ta nên dùng lớp trừu tượng, khi nào nên dùng interface?
++ Interface : Khi bạn muốn tạo dựng một bộ khung chuẩn gồm các chức năng mà những module hay project cần phải có.
+Giống như sau khi nhận requirement của khách hàng về team ngồi với nhau và phân tích các đầu mục các tính năng của từng module,
+sau đó triển khai vào code viết các interface như đã phân tích,để các bạn dev có thể nhìn vào đó để thực hiện đủ các tính năng
+(khi đã implement rồi thì không sót một tính năng nào ^^).
+
++ Abstract class: Giống như demo trên bạn có thể hiểu khi định nghĩa một đối tượng có những chức năng A,B,C
+trong đó tính năng A,B chắc chắn sẽ thực thi theo cách nào đó, còn tính năng C phải tùy thuộc vào đối tượng cụ thể là gì,
+như đối tượng Dog, Cat tuy chúng đều có thể phát ra âm thanh nhưng âm thanh là khác nhau.
+Vì vậy method Speak() là abstract method để chỉ ra rằng tính năng này còn dang dở chưa rõ thực thi,
+các lớp extend phải hoàn thành nốt tính năng này, còn những tính năng đã hoàn thành vẫn sử dụng như bình thường đây là những tính năng chung.
 
 Exercise 5:
 - Đa hình hỗ trợ như thế nào cho khả năng mở rộng cây thừa kế?
++ Đa hình giúp cho cây thừa kế có khả năng mở rộng rất lớn.
+Khi 1 lớp(A) được kế thừa từ càng nhiều lớp khác(B, C, D,...), thì lớp (A) sẽ có rất nhiều phương thức để có thể dùng lại.
++ đa hình cho phép ta tạo các cấu trúc dữ liệu dành cho đối tượng thuộc tất cả các lớp
 
 Exercise 6:
 - Liệt kê 4 kiểu gán tham chiếu lớp cha và lớp con cho các biến kiểu lớp cha và lớp con, mỗi kiểu có những thông tin quan trọng gì?
-
+vd:
+Class B extends A
+-> 4 kiểu gán tham chiếu lớp cha và lớp con cho các biến kiểu lớp cha và lớp con:
+A parent1 = new A();
+B child = new B();
+A parent2 = new B();
+B child2 = (B) parent2;
 
 Exercise 7:
 - Giải thích quan điểm rằng đa hình cho phép lập trình tổng quát thay vì lập trình cho từng trường hợp cụ thể. Dùng ví dụ minh họa.
 
++ Đa hình đa hình đi kèm với quan hệ thừa kế và nó có nghĩa rằng cùng một cái tên có thể được hiểu theo các cách khác nhau tùy từng tình huống.
+  Các đối tượng thuộc các lớp dẫn xuất khác nhau có thể được đối xử như nhau, như thể chúng là các đối tượng thuộc lớp cơ sở
++ Ví dụ:
+  Có thể đặt các đối tượng Triangle và Circle trong cùng một cấu trúc dữ liệu dành cho Shape, hoặc dùng cùng một lời gọi hàm rotate cho các đối tượng Triangle hay Circle.
+  Khi nhận được cùng một thông điệp đó, các đối tượng thuộc các lớp khác nhau hiểu nó theo những cách khác nhau.
+
 - Lập trình tổng quát mang lại những ích lợi gì?
++ Lập trình tổng quát cho phép xây dựng các phương thức tổng quát và các lớp tổng quát, mà nhờ đó có được một tập các phương thức
+  tương tự nhau từ chỉ một cài đặt phương thức, một tập các kiểu dữ liệu tương tự nhau từ chỉ một cài đặt lớp .
 
 Exercise 8:
 - Một lớp con có thể thừa kế giao diện hay cài đặt từ một lớp cha.
 Một cây thừa kế được thiết kế để cho thừa kế giao diện khác với cây thừa kế được dành cho thừa kế cài đặt như thế nào?
+
+- Một cây thừa kế được thiết kế để cho thừa kế giao diện thì khi sử dụng chúng, người dùng phải viết lại những phương thức để sử dụng lại từ đầu.
+Gốc của cây thừa kế giao diện có thể là interface hoặc là abstract class.
+- Một cây thừa kế được thiết kế để cho thừa kế cài đặt, thì khi sử dụng chúng, người dùng có thể gọi phương thức và sử dụng được luôn.
+Gốc của cây thừa kế giao diện có thể là class hoặc là abstract class.
