@@ -21,30 +21,24 @@ public abstract class Account {
   }
 
   boolean deposit(int amount) {
-	try {
+	if (amount > 0) {
 	  balance += amount;
 	  transactions++;
 	  return true;
-	} catch (Exception e) {
-	  e.printStackTrace();
-	  return false;
-	}
+	} else return false;
   }
 
   boolean withdraw(int amount) {
-	try {
+	if (amount <= balance && amount > 0) {
 	  balance -= amount;
 	  transactions++;
 	  return true;
-	} catch (Exception e) {
-	  e.printStackTrace();
-	  return false;
-	}
+	} else return false;
   }
 
   public abstract int endMonthCharge();
 
-  public void endMonth() {
+  void endMonth() {
 	balance -= endMonthCharge();
 	System.out.printf("Balance = %d. Transactions = %d. Fee = %d", balance, transactions, endMonthCharge());
 	transactions = 0;
