@@ -1,8 +1,8 @@
 package chapter8.exercies9;
 
 public class Addition implements BinaryExpression {
-  Expression left;
-  Expression right;
+  private Expression left;
+  private Expression right;
 
   @Override
   public Expression left() {

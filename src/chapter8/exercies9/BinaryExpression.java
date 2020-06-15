@@ -1,7 +1,7 @@
 package chapter8.exercies9;
 
 public interface BinaryExpression extends Expression {
-  Expression left();
+  public Expression left();
 
-  Expression right();
+  public Expression right();
 }
