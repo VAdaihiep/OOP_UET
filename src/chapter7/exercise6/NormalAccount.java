@@ -7,6 +7,7 @@ public class NormalAccount extends Account {
 	super(initialBalance);
   }
 
+  @Override
   public int endMonthCharge() {
 	return MONTHLY_FEE;
   }

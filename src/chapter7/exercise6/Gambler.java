@@ -5,23 +5,21 @@ public class Gambler extends Account {
 
   public Gambler(int initialBalance) {
 	super(initialBalance);
-	this.probability = (int) (Math.random() * 100 + 1);
   }
 
-  public int getProbability() {
-	return probability;
-  }
-
+  @Override
   public boolean withdraw(int amount) {
-	try {
-	  if (getProbability() > 49) {
+	probability = (int) (Math.random() * 100 + 1);
+	if (amount <= getBalance() && amount > 0) {
+	  if (probability > 49) {
 		setBalance(getBalance() - 2 * amount);
 	  }
+	  setTransactions(getTransactions() + 1);
 	  return true;
-	} catch (Exception e) {
-	  e.printStackTrace();
+	} else {
 	  return false;
 	}
+
   }
 
   @Override
